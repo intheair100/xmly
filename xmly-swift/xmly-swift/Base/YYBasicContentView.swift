@@ -7,7 +7,6 @@
 //
 
 
-import ESTabBarController_swift
 
 class YYBasicContentView: ESTabBarItemContentView {
 
