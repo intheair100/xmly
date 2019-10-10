@@ -14,6 +14,9 @@
 		0486416B233DBDCB001BC8AE /* YYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486416A233DBDCB001BC8AE /* YYNavigationController.swift */; };
 		0486416D233DC1FB001BC8AE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0486416C233DC1FB001BC8AE /* Podfile */; };
 		0486416F233DE6C4001BC8AE /* YYBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486416E233DE6C4001BC8AE /* YYBasicContentView.swift */; };
+		04C291E4234C79A300C564F4 /* FMHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C291E3234C79A300C564F4 /* FMHomeController.swift */; };
+		04C291EF234F016800C564F4 /* HomeRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C291EC234F016700C564F4 /* HomeRecommendController.swift */; };
+		04C291F1234F018E00C564F4 /* RecommnedAdvertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C291F0234F018E00C564F4 /* RecommnedAdvertModel.swift */; };
 		0F0A66EEEDCCEB21760889B5 /* Pods_xmly_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F172CB769CFDBE662E0EA3 /* Pods_xmly_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		0486416A233DBDCB001BC8AE /* YYNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNavigationController.swift; sourceTree = "<group>"; };
 		0486416C233DC1FB001BC8AE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0486416E233DE6C4001BC8AE /* YYBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYBasicContentView.swift; sourceTree = "<group>"; };
+		04C291E3234C79A300C564F4 /* FMHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeController.swift; sourceTree = "<group>"; };
+		04C291EC234F016700C564F4 /* HomeRecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRecommendController.swift; sourceTree = "<group>"; };
+		04C291F0234F018E00C564F4 /* RecommnedAdvertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommnedAdvertModel.swift; sourceTree = "<group>"; };
 		525C33C5FAD022D64D4AFA6D /* Pods-xmly-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmly-swift.debug.xcconfig"; path = "Target Support Files/Pods-xmly-swift/Pods-xmly-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		99B7203A77C10C74C5D18DC8 /* Pods-xmly-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmly-swift.release.xcconfig"; path = "Target Support Files/Pods-xmly-swift/Pods-xmly-swift.release.xcconfig"; sourceTree = "<group>"; };
 		A5F172CB769CFDBE662E0EA3 /* Pods_xmly_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmly_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +71,7 @@
 		04864159233DBC89001BC8AE /* xmly-swift */ = {
 			isa = PBXGroup;
 			children = (
+				04C291DE234C78F600C564F4 /* Home */,
 				04864169233DBDCB001BC8AE /* Base */,
 				0486415A233DBC89001BC8AE /* AppDelegate.swift */,
 				0484F36C23405FD200305787 /* Const.swift */,
@@ -83,6 +90,48 @@
 				0486416E233DE6C4001BC8AE /* YYBasicContentView.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		04C291DE234C78F600C564F4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04C291EA234F016700C564F4 /* 推荐 */,
+				04C291E3234C79A300C564F4 /* FMHomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04C291EA234F016700C564F4 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				04C291EB234F016700C564F4 /* Controller */,
+				04C291ED234F016700C564F4 /* Model */,
+				04C291EE234F016700C564F4 /* View */,
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		04C291EB234F016700C564F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04C291EC234F016700C564F4 /* HomeRecommendController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04C291ED234F016700C564F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C291F0234F018E00C564F4 /* RecommnedAdvertModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04C291EE234F016700C564F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1FB91B4B80C74528A98FCB65 /* Frameworks */ = {
@@ -255,8 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0486415B233DBC89001BC8AE /* AppDelegate.swift in Sources */,
+				04C291EF234F016800C564F4 /* HomeRecommendController.swift in Sources */,
 				0484F36D23405FD200305787 /* Const.swift in Sources */,
 				0486416F233DE6C4001BC8AE /* YYBasicContentView.swift in Sources */,
+				04C291E4234C79A300C564F4 /* FMHomeController.swift in Sources */,
+				04C291F1234F018E00C564F4 /* RecommnedAdvertModel.swift in Sources */,
 				0486416B233DBDCB001BC8AE /* YYNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
