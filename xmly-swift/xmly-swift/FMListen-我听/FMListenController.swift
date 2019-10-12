@@ -12,7 +12,9 @@ class FMListenController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: leftBarButton)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBarButton)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -32,6 +34,10 @@ class FMListenController: UIViewController {
         return button
     }()
     
+    @objc func leftBarButtonClick() {
+        
+    }
+
     //Mark: - 导航栏左边消息点击事件
     @objc func rightBarButtonClick() {
         
