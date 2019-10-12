@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func customIrregularityStyle(delegate:UITabBarControllerDelegate)  {
+    func customIrregularityStyle(delegate:UITabBarControllerDelegate)  -> ESTabBarController  {
         let tabbar:ESTabBarController = ESTabBarController()
         tabbar.delegate = delegate
         tabbar.title = "Irregularity"
@@ -34,7 +34,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             return false
         }
+        tabbar.didHijackHandler = {
+            [weak tabbar] tabbarController, viewController, index in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                
+            })
+        }
         
+        let v1 = FMHomeController()
+//        v1.tabBarItem = ESTabBarItem.init(<#T##contentView: ESTabBarItemContentView##ESTabBarItemContentView#>, title: <#T##String?#>, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>, tag: <#T##Int#>)
+//        v1.title = "首页"
+//        tabbar.viewControllers = [v1]
+        
+        let n1 = YYNavigationController.init(rootViewController: v1)
+        tabbar.viewControllers = [n1]
+        return tabbar
     }
     
     
