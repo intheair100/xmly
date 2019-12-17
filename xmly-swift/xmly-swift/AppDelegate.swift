@@ -15,14 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = UIViewController()
+        let tab = self.customIrregularityStyle(delegate: self as? UITabBarControllerDelegate)
+        self.window?.rootViewController = tab
         self.window?.makeKeyAndVisible()
         return true
     }
 
-    func customIrregularityStyle(delegate:UITabBarControllerDelegate)  -> ESTabBarController  {
+    func customIrregularityStyle(delegate: UITabBarControllerDelegate?) -> ESTabBarController {
         let tabbar:ESTabBarController = ESTabBarController()
         tabbar.delegate = delegate
         tabbar.title = "Irregularity"
@@ -73,7 +72,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+ 
 
 }
-

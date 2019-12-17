@@ -20,6 +20,7 @@
 		04C291EF234F016800C564F4 /* HomeRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C291EC234F016700C564F4 /* HomeRecommendController.swift */; };
 		04C291F1234F018E00C564F4 /* RecommnedAdvertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C291F0234F018E00C564F4 /* RecommnedAdvertModel.swift */; };
 		0F0A66EEEDCCEB21760889B5 /* Pods_xmly_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F172CB769CFDBE662E0EA3 /* Pods_xmly_swift.framework */; };
+		1847F5EB23A8C42F00D294BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1847F5E923A8C42E00D294BF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		04C291E3234C79A300C564F4 /* FMHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeController.swift; sourceTree = "<group>"; };
 		04C291EC234F016700C564F4 /* HomeRecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRecommendController.swift; sourceTree = "<group>"; };
 		04C291F0234F018E00C564F4 /* RecommnedAdvertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommnedAdvertModel.swift; sourceTree = "<group>"; };
+		1847F5EA23A8C42E00D294BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		525C33C5FAD022D64D4AFA6D /* Pods-xmly-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmly-swift.debug.xcconfig"; path = "Target Support Files/Pods-xmly-swift/Pods-xmly-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		99B7203A77C10C74C5D18DC8 /* Pods-xmly-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmly-swift.release.xcconfig"; path = "Target Support Files/Pods-xmly-swift/Pods-xmly-swift.release.xcconfig"; sourceTree = "<group>"; };
 		A5F172CB769CFDBE662E0EA3 /* Pods_xmly_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmly_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				0484F36C23405FD200305787 /* Const.swift */,
 				0486415C233DBC8C001BC8AE /* Assets.xcassets */,
 				0486415E233DBC8C001BC8AE /* LaunchScreen.storyboard */,
+				1847F5E923A8C42E00D294BF /* Main.storyboard */,
 				04864161233DBC8C001BC8AE /* Info.plist */,
 				0486416C233DC1FB001BC8AE /* Podfile */,
 			);
@@ -252,6 +255,7 @@
 				0486416D233DC1FB001BC8AE /* Podfile in Resources */,
 				0486415D233DBC8C001BC8AE /* Assets.xcassets in Resources */,
 				04864160233DBC8C001BC8AE /* LaunchScreen.storyboard in Resources */,
+				1847F5EB23A8C42F00D294BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +366,14 @@
 				0486415F233DBC8C001BC8AE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1847F5E923A8C42E00D294BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1847F5EA23A8C42E00D294BF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
