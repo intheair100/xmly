@@ -20,7 +20,7 @@ class FMHomeController: UIViewController {
         style.titleColor = UIColor.gray
         style.bottomLineColor = DominantColor
         style.bottomLineHeight = 2
-        
+        self.title = "首页"
         let titles = ["推荐","分类","VIP","直播","广播"]
         let viewControllers:[UIViewController] = [HomeRecommendController()]
         

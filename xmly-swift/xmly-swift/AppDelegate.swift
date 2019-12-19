@@ -41,12 +41,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         let v1 = FMHomeController()
-//        v1.tabBarItem = ESTabBarItem.init(<#T##contentView: ESTabBarItemContentView##ESTabBarItemContentView#>, title: <#T##String?#>, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>, tag: <#T##Int#>)
-//        v1.title = "首页"
-//        tabbar.viewControllers = [v1]
-        
+        v1.tabBarItem = ESTabBarItem.init(YYIrregularityBasicContentView(), title: "首页", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
         let n1 = YYNavigationController.init(rootViewController: v1)
-        tabbar.viewControllers = [n1]
+        
+        let v2 = FMListenController()
+        v2.tabBarItem = ESTabBarItem.init(YYIrregularityBasicContentView(), title: "find", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
+        let n2 = YYNavigationController.init(rootViewController: v2)
+        tabbar.viewControllers = [n1,n2]
         return tabbar
     }
     
