@@ -28,6 +28,7 @@
 		1847F5FC23AB799D00D294BF /* FMListenFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F5FB23AB799D00D294BF /* FMListenFooterView.swift */; };
 		1847F5FE23B4A79100D294BF /* ListenSubscibeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F5FD23B4A79000D294BF /* ListenSubscibeViewModel.swift */; };
 		1847F60023B4A99300D294BF /* AlbumResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F5FF23B4A99300D294BF /* AlbumResultsModel.swift */; };
+		185D3D5A23B4B3F100896E9A /* ListenSubscibeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D3D5923B4B3F100896E9A /* ListenSubscibeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		1847F5FB23AB799D00D294BF /* FMListenFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMListenFooterView.swift; sourceTree = "<group>"; };
 		1847F5FD23B4A79000D294BF /* ListenSubscibeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenSubscibeViewModel.swift; sourceTree = "<group>"; };
 		1847F5FF23B4A99300D294BF /* AlbumResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResultsModel.swift; sourceTree = "<group>"; };
+		185D3D5923B4B3F100896E9A /* ListenSubscibeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenSubscibeCell.swift; sourceTree = "<group>"; };
 		525C33C5FAD022D64D4AFA6D /* Pods-xmly-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmly-swift.debug.xcconfig"; path = "Target Support Files/Pods-xmly-swift/Pods-xmly-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		99B7203A77C10C74C5D18DC8 /* Pods-xmly-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmly-swift.release.xcconfig"; path = "Target Support Files/Pods-xmly-swift/Pods-xmly-swift.release.xcconfig"; sourceTree = "<group>"; };
 		A5F172CB769CFDBE662E0EA3 /* Pods_xmly_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmly_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 			children = (
 				1847F5F923AB73D800D294BF /* FMListenHeaderView.swift */,
 				1847F5FB23AB799D00D294BF /* FMListenFooterView.swift */,
+				185D3D5923B4B3F100896E9A /* ListenSubscibeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				1847F5ED23AB241E00D294BF /* ViewController.swift in Sources */,
 				1847F5F323AB314100D294BF /* YYIrregularityContentView.swift in Sources */,
+				185D3D5A23B4B3F100896E9A /* ListenSubscibeCell.swift in Sources */,
 				049A138E2351C1C200B5E53B /* FMListenController.swift in Sources */,
 				1847F5FC23AB799D00D294BF /* FMListenFooterView.swift in Sources */,
 				0486415B233DBC89001BC8AE /* AppDelegate.swift in Sources */,
@@ -507,7 +511,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mac.com.xmly-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -525,7 +529,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mac.com.xmly-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
